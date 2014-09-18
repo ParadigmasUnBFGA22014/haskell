@@ -1,16 +1,16 @@
-module Main where 
+﻿module Main where 
 
-import Grafo (grafo,retorna_aresta,filtra_questoes_aresta,ver_questoes_aresta,ver_informacao_aresta,selec_sec)
+import Grafo (grafo,retorna_no,filtra_questoes_no,ver_questoes_no,ver_informacao_no,selec_sec)
 
 startGame::Int -> IO()
 startGame idStart = do
 	
-	print(ver_informacao_aresta (retorna_aresta grafo idStart))
+	print(ver_informacao_no (retorna_no grafo idStart))
 	putStrLn ""
-	print(ver_questoes_aresta(filtra_questoes_aresta(retorna_aresta grafo idStart)))
+	print(ver_questoes_no(filtra_questoes_no(retorna_no grafo idStart)))
 	putStrLn "O que vc vai fazer? (digite um dos numeros)"
 	opcao <-readLn
-	let aux=selec_sec(filtra_questoes_aresta(retorna_aresta grafo idStart)!!(opcao-1))
+	let aux=selec_sec(filtra_questoes_no(retorna_no grafo idStart)!!(opcao-1))
 	let idStart=aux
 
 	if (opcao<100)then startGame idStart
