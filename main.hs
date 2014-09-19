@@ -9,11 +9,11 @@ startGame idStart = do
 	putStrLn ""
 	print(ver_questoes_no(filtra_questoes_no(retorna_no grafo idStart)))
 	putStrLn "O que vc vai fazer? (digite um dos numeros)"
-	opcao <-readLn
-	let aux=selec_sec(filtra_questoes_no(retorna_no grafo idStart)!!(opcao-1))
-	let idStart=aux
+	opcao <- readLn
+	let aux = selec_sec(filtra_questoes_no(retorna_no grafo idStart)!!(opcao-1))
+	let idStart = aux
 
-	if (opcao<100)then startGame idStart
+	if (opcao < 100)then startGame idStart
 		else putStrLn "Voce saiu do game :( "
 
 
@@ -25,7 +25,7 @@ main =do
 	putStrLn "Qual eh o seu nome?"
 	putStrLn ""
 	nome <- getLine
-	putStrLn ("Ok "++nome++" Seja bem vindo(a)")
+	putStrLn ("Ok " ++ nome ++ " Seja bem vindo(a)")
 	putStrLn ""
 	
 	startGame 1
