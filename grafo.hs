@@ -1,10 +1,10 @@
 module Grafo(grafo,retorna_no,filtra_questoes_no,ver_questoes_no,ver_informacao_no,selec_sec)where
 
-type Vertice=Int 
+type Aresta=Int 
 type Id=Int
 type Informacao = String
 type Questao = String
-type No =([(Vertice,Vertice,Questao)],Id,Informacao)
+type No =([(Aresta,Aresta,Questao)],Id,Informacao)
 type Grafo =[No]
 
 grafo ::[No]
@@ -25,12 +25,12 @@ retorna_no ((a,b,c):xs) id
 						|(b/=id)= retorna_no xs id  
 						|otherwise =(a,b,c)
 
-filtra_questoes_no :: No -> [(Vertice,Vertice,Questao)]
+filtra_questoes_no :: No -> [(Aresta,Aresta,Questao)]
 filtra_questoes_no x = selec_prim x
 
-ver_questoes_no :: [(Vertice,Vertice,Questao)]->[Questao]
+ver_questoes_no :: [(Aresta,Aresta,Questao)]->[Questao]
 ver_questoes_no [] = []
-ver_questoes_no ((verticeA,verticeB,questao):xs)=questao:(ver_questoes_no xs)
+ver_questoes_no ((arestaA,arestaB,questao):xs)=questao:(ver_questoes_no xs)
 
 ver_informacao_no :: No ->Informacao
 ver_informacao_no x=selec_ter x
