@@ -10,7 +10,7 @@ type Grafo = [No]
 grafo :: [No]
 
 grafo = [
-		([(0, 1, "(1) Luziania"), (0, 16, "(2) Ceilandia")], 0, "Voce precisa ir para a FGA, escolha sua localidade."),
+		([(0, 1, "(1) Luziania"), (0, 16, "(2) Ceilandia"), (0, 34, "(3) Santa Maria")], 0, "Voce precisa ir para a FGA, escolha sua localidade."),
 		([(1,2,"(1) Pegar um onibus Lotado"), (1,3,"(2) Pegar uma carona")], 1,"Voce mora em Luziania e precisa ir para a FGA."),
 		([(2,4,"(1) Chamar um taxi"), (2,5,"(2) Esperar outro Onibus"), (2,11,"(3) Chamar um moto taxi") ], 2, "O onibus quebrou."),
 		([(5,11,"(1) Chamar um moto taxi"), (5,7,"(2) Esperar")], 5, "Como sempre, esta tendo engarrafamento do Valparaiso."),
@@ -42,23 +42,21 @@ grafo = [
 		([(31,32,"(1) Entrar na FGA")], 31,"Voce conseguiu chegar na FGA decalco!"),
 		([(32,33,"(1) Entrar na FGA assim mesmo"), (32,20,"(2) Ir para o hospital")], 32,"Voce pegou uma doenca por andar descalco no estacionamento da FGA e nao conseguiu entrar!"),
 		([(33,20,"(1) Game Over!")], 33,"Sua doenca pirou e voce morreu antes de conseguir entrar na FGA!"),
-		([(20,0,"(1) Game Over!")], 20,"Voce perdeu por nao conseguir ir para a FGA!")
+		([(20,0,"(1) Game Over!")], 20,"Voce perdeu por nao conseguir ir para a FGA!"),
+		--A partir daqui é Santa Maria
+		([(34,35,"(1) De Onibus."),(34,36,"(2) De Carro."),(34,37,"(3) De Bike."),(34,38,"(4) De Carroca.")],34,"Voce mora em Santa Maria, como vc vai para FGA?"),
+		([(35,39,"(1) Pegar um Taxi."),(35,40,"(2) Fazer respiracao boca a boca na vaca e salvar ela."),(2,4,"(3) Voltar para casa e pegar a Bike.")],35,"O motorista atropelou uma vaca sagrada e esta sendo linxado por indianos."),
+		([(36,39,"(1) Abandonar o carro e pegar um taxi."),(36,42,"(2) Abandonar o carro e ir a pe mesmo.")],36,"O pneu furou e voce esta sem Estepe."),
+		([(37,38,"(1) Pegar uma carona numa carroca."),(37,41,"(2) Roubar a bicicleta de uma crianca.")],37,"Voce foi assaldato por um bandido cego."),
+		([(38,43,"(1) Puxar a carroca no braco."),(38,42,"(2) Abandonar e ir a pe para FGA.")],38,"O cavalo se soltou e correu atras de uma egua "),
+		([(39,44,"(1) Sequestrar o taxi e ir para FGA. "),(39,42,"(2) Pular do carro em movimento e ir andando.")],39,"Voce esta na metade do caminho e viu que esta sem dinheiro."),
+		([(40,44,"(1) Correr dos indianos e vai a pe para FGA."),(40,42,"(2) Ordenar que eles o carreguem ate a FGA.")],40,"Os indianos estao te adorando pensando que voce eh o deus shiva."),
+		([(41,42,"(1) Correr bem rapido e vai a pe para FGA."),(41,2,"(2) Correr bem rapido e entra no primeiro onibus que voce ver.")],41,"O pai da crianca eh um negao bombado de 2 metros de altura e esta muito bravo. "),
+		([(42,44,"(1) Amarrar sua toca no pe e vai andando."),(42,44,"(2) Ir pulando de um pe so")],42,"A sola do seu sapato soltou e o asfalto esta muito quente."),	
+		([(43,42,"(1) Abandonar e ir a pe para FGA."),(43,41,"(2) Roubar a bicicleta de uma crianca e ir para FGA.")],43,"A carroca desmontou."),
+		([(44,0,"Game Over!")],44,"A FGA esta fechada, hoje eh domingo, voce confundiu os dias =(")
 		]
 
---grafo = [
---			([(1,2,"(1) De Onibus."),(1,3,"(2) De Carro."),(1,4,"(3) De Bike."),(1,5,"(4) De Carroca.")],1,"Voce mora em Santa Maria, como vc vai para FGA?"),
---			([(2,6,"(1) Pegar um Taxi."),(2,7,"(2) Fazer respiracao boca a boca na vaca e salvar ela."),(2,4,"(3) Voltar para casa e pegar a Bike.")],2,"O motorista atropelou uma vaca sagrada e esta sendo linxado por indianos."),
---			([(3,6,"(1) Abandonar o carro e pegar um taxi."),(3,9,"(2) Abandonar o carro e ir a pe mesmo.")],3,"O pneu furou e voce esta sem Estepe."),
---			([(4,5,"(1) Pegar uma carona numa carroca."),(4,8,"(2) Roubar a bicicleta de uma crianca.")],4,"Voce foi assaldato por um bandido cego."),
---			([(5,10,"(1) Puxar a carroca no braco."),(5,9,"(2) Abandonar e ir a pe para FGA.")],5,"O cavalo se soltou e correu atras de uma egua "),
---			([(6,11,"(1) Sequestrar o taxi e ir para FGA. "),(6,9,"(2) Pular do carro em movimento e ir andando.")],6,"Voce esta na metade do caminho e viu que esta sem dinheiro."),
---			([(7,11,"(1) Correr dos indianos e vai a pe para FGA."),(7,9,"(2) Ordenar que eles o carreguem ate a FGA.")],7,"Os indianos estao te adorando pensando que voce eh o deus shiva. "),
---			([(8,9,"(1) Correr bem rapido e vai a pe para FGA."),(8,2,"(2) Correr bem rapido e entra no primeiro onibus que voce ver.")],8,"O pai da crianca eh um negao bombado de 2 metros de altura e esta muito bravo. "),
---			([(9,11,"(1) Amarrar sua toca no pe e vai andando."),(9,11,"(2) Ir pulando de um pe so")],9,"A sola do seu sapato soltou e o asfalto esta muito quente. "),	
---			([(10,9,"(1) Abandonar e ir a pe para FGA."),(10,8,"(2) Roubar a bicicleta de uma crianca e ir para FGA.")],10,"A carroca desmontou. "),
---			([(11,1,"Digite 1 para voltar para Casa")],11,"A FGA esta fechada, hoje eh domingo, voce confundiu os dias =(")
-
---		]
 selec_prim (x,_,_) = x
 selec_sec (_,x,_) = x
 selec_ter (_,_,x) = x
