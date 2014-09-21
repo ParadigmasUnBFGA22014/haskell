@@ -10,7 +10,8 @@ type Grafo = [No]
 grafo :: [No]
 
 grafo = [
-		([(1,2,"(1) Onibus Lotado"), (1,3,"(2) Carona")], 1,"Voce mora no Goias e precisa ir para FGA, de que vc vai?"),
+		([(0, 1, "(1) Entorno"), (0, 16, "(2) Ceilandia")], 0, "Voce precisa ir para a FGA, escolha sua localidade"),
+		([(1,2,"(1) Onibus Lotado"), (1,3,"(2) Carona")], 1,"Voce mora no Goias, de que voce vai?"),
 		([(2,4,"(1) Taxi"), (2,5,"(2) Espera outro Onibus"), (2,11,"(3) Moto taxi") ], 2, "O onibus quebrou, e agora o que voce faz?"),
 		([(5,11,"(1) Moto Taxi"), (5,7,"(2) Esperar")], 5, "Como sempre, esta tendo engarrafametno do Valparaiso, o que voce faz?"),
 		([(7,8,"(1) Integracao"), (7,9,"(2) Onibus da FGA"), (7,10,"(3) A pe")], 7, "Voce esta na Entrada Sul do Gama, como voce vai para a FGA?"),
@@ -22,7 +23,8 @@ grafo = [
 		([(12,1,"Game Over")], 12, "Voce foi pego, e agora vai passar a noite na jaula."),
 		([(13,8,"(1) Integracao"), (13,9,"(2) Onibus da FGA"), (13,10,"(3) A pe")], 13, "Os policiais te ouviram. Voce foi liberado, mas como voce vai chegar na FGA agora?"),
 		([(3,2,"(1) Pegar um onibus"), (3,15,"(2) Ajuda a troca")], 3, "O hoje e o seu dia de sorte, o pneu furou, voce e um bom camarada?"),
-		([(15,11,"(1) Moto Taxi"), (15,11,"(2) Esperar")], 15, "Mais uma mare de sorte. Houve um acidente, esta tudo parado, o que voce vai fazer?")
+		([(15,11,"(1) Moto Taxi"), (15,11,"(2) Esperar")], 15, "Mais uma mare de sorte. Houve um acidente, esta tudo parado, o que voce vai fazer?"),
+		([(16,2,"(1) Onibus Lotado"), (16,3,"(2) Carona")], 16,"Voce mora na Ceilandia, de que voce vai?")
 		]
 
 selec_prim (x,_,_) = x
