@@ -52,4 +52,4 @@ main =do
 	putStrLn ("Ok "++nome++" Seja bem vindo(a)")
 	putStrLn ""
 	
-	startGame 1
+	startGame 0
