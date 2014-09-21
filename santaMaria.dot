@@ -1,0 +1,53 @@
+digraph 
+{
+
+node[shape =doublecircle];
+"SantaMaria" [style =bold,label="Como você vai a FGA?"];
+"FGA" [style=bold];
+node[shape=circle];
+
+"Onibus" [style=bold,label="O motorista atropelou uma Vaca  Sagrada \n e esta sendo linxado por indianos."];
+"Carro" [style=bold,label="O pneu furou e você \nestá sem espete."];
+"Bike" [style=bold,label="Você foi assaltado por \num bandido cego."];
+"Carroca" [style=bold,label="O cavalo se soltou e correu \natras de uma Egua no sil."];
+
+"Táxi" [style=bold,label="Você viu que está \nsem dinheiro \n ."];
+"Vaca" [style=bold,label="Os indianos estão te adorando \npensando que vocêé Chiva."];
+"Pé" [style=bold,label="Seu sapato furou e \no asfalto esta quente."];
+"BikeCrianca" [style=bold,label="O pai da crianca é um \nnegão bombado de 2 metros."];
+"PuxarCarroca" [style=bold,label="A carroca desmontou."];
+
+"SantaMaria" -> "Onibus" [label="De Onibus"]; 
+"SantaMaria" -> "Carro" [label="De Carro"];
+"SantaMaria" -> "Bike" [label="De Bike"];
+"SantaMaria" -> "Carroca" [label="De Carroca"];
+
+"Onibus" -> "Táxi"  [label="Pegar um táxi"];
+"Onibus" -> "Vaca"  [label="Salvar a Vaca com \nrespiracao boca a boca"];
+"Onibus" -> "Bike"  [label="Voltar pra casa\ne pegar a Bike"];
+
+"Carro" -> "Táxi"  [label="Pegar um Táxi"];
+"Carro" -> "Pé"  [label="Ir a pé mesmo."];
+
+"Bike" -> "BikeCrianca"  [label="Roubar uma bike \nde alguma crianca."];
+"Bike" -> "Carroca"  [label="Pegar uma Carona\nEm uma carroca."];
+
+"Carroca" -> "PuxarCarroca"  [label="Puxar a Carroca \naté a FGA."];
+"Carroca" -> "Pé"  [label="Abandonar a carroca\ne ir a pé."];
+
+"PuxarCarroca" -> "BikeCrianca"  [label="Roubar uma bike \nde alguma crianca."];
+"PuxarCarroca" -> "Pé" [label="Ir para FGA \na pé mesmo."];
+
+"BikeCrianca" -> "Pé" [label="Correr o mais rápido \npossível e ir a pé\npara FGA."];
+"BikeCrianca" -> "Onibus" [label="Pegar um Onibus"];
+
+"Táxi" -> "FGA" [label="Roubar o Táxi e ir para FGA."];
+"Táxi" -> "Pé" [label="Abrir a porta e pular do carro\nem movimento e fugir."];
+
+"Vaca" -> "Pé" [label="Despistar os idianos e ir a pé para FGA."];
+"Vaca" -> "FGA" [label="Ordenar os adoradores\na te carregarem até\na FGA."];
+
+"Pé" -> "FGA" [label="Ir pulado de um pé só\naté a FGA."];
+"Pé" -> "FGA" [label="\n\n\nAmarrar sua toca no pé e andar"];
+
+}
