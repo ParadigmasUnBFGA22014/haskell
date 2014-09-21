@@ -37,7 +37,7 @@ grafo = [
 		([(21,24,"(1) Aumentar suborno para R$ 15,00"), (21,25,"(2) Esquecer suborno e tentar outra negociacao"), (21,23,"(3) Deixar moto ser apreendida")], 21,"Voce quase conseguiu, o policial pediu mais R$ 5,00 para tudo ficar certo!"),
 		([(22,0,"(1) Game Over! Digite 1 para reiniciar.")], 22,"Ops! Ao tentar escapar o policial te deu um tiro, e voce caiu morto no chao!"),
 		([(23,19,"(1) Ir de onibus"), (23,26,"(2) Voltar pra casa")], 23,"O policial prendeu sua moto e te deixou, o que voce vai fazer agora?"),
-		([(24,0,"(1) Entrar na FGA!")], 24,"Sucesso! Com todo esse dinheiro o policial deixou voce passar, e voce consegui chegar a FGA!"),
+		([(24,44,"(1) Entrar na FGA!")], 24,"Sucesso! Com todo esse dinheiro o policial deixou voce passar, e voce consegui chegar a FGA!"),
 		([(25,20,"(1) Ir Preso!")], 25,"Que mancada! O policial fica furioso e te prende por tentativa de suborno!"),
 		([(26,20,"(1) Voltar pra casa")], 26,"Voce estava andando e foi assaltado, levaram tudo!"),
 		([(27,29,"(1) Continuar no onibus"), (27,20,"(2) Descer do onibus")], 27,"O onibus foi assaltado e levaram todo dinheiro e pertences de que estava na frente, voce escapou!"),
