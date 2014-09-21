@@ -11,18 +11,22 @@ grafo :: [No]
 
 grafo = [
 		([(0, 1, "(1) Luziania"), (0, 16, "(2) Ceilandia"), (0, 34, "(3) Santa Maria")], 0, "Voce precisa ir para a FGA, escolha uma cidade de partida."),
+		
 		([(1,2,"(1) Pegar um onibus Lotado"), (1,3,"(2) Pegar uma carona")], 1,"Voce mora em Luziania e precisa ir para a FGA."),
 		([(2,4,"(1) Chamar um taxi"), (2,5,"(2) Esperar outro Onibus"), (2,11,"(3) Chamar um moto taxi") ], 2, "O onibus quebrou."),
-		([(5,11,"(1) Chamar um moto taxi"), (5,7,"(2) Esperar")], 5, "Como sempre, esta tendo engarrafamento do Valparaiso."),
-		([(7,8,"(1) Pegar o Integracao"), (7,9,"(2) Pegar o onibus da FGA"), (7,10,"(3) ir a pe")], 7, "Voce esta na Entrada Sul do Gama."),
-		([(10,1,"Game Over")], 10, "Voce desmaiou na metado do caminho, por ser sedentario."),
-		([(9,8,"(1) Pegar o Integracao"), (9,10,"(2) Ir a pe")], 9, "O onibus estava saindo e o motorista nao parou para voce. Tente outra maneira."),
-		([(8,20,"(1) Ir para FGA!")], 8, "Boa opcao. apesar dos inumeros problemas voce conseguiu chegar na FGA a tempo!"),
+		([(3,2,"(1) Pegar um onibus"), (3,15,"(2) Ajudar a trocar")], 3, "O hoje e o seu dia de sorte, o pneu furou, voce e um bom camarada?"),		
 		([(4,5,"(1) Esperar outro onibus"), (4,11,"(2) Chamar um moto taxi")], 4, "Cara, voce e um universitario, voce nao tem direnhiro nem para comer. Como voce passou no vestibular pensando assim?"),
+		([(5,11,"(1) Chamar um moto taxi"), (5,7,"(2) Esperar")], 5, "Como sempre, esta tendo engarrafamento do Valparaiso."),
+		--No 6 ?
+		([(7,8,"(1) Pegar o Integracao"), (7,9,"(2) Pegar o onibus da FGA"), (7,10,"(3) ir a pe")], 7, "Voce esta na Entrada Sul do Gama."),
+		([(8,20,"(1) Ir para FGA!")], 8, "Boa opcao. apesar dos inumeros problemas voce conseguiu chegar na FGA a tempo!"),
+		([(9,8,"(1) Pegar o Integracao"), (9,10,"(2) Ir a pe")], 9, "O onibus estava saindo e o motorista nao parou para voce. Tente outra maneira."),
+		([(10,1,"Game Over")], 10, "Voce desmaiou na metado do caminho, por ser sedentario."),
 		([(11,12,"(1) Descer e sair correndo"), (11,13,"(2) Explicar a Situacao")], 11, "Opa! Esta tendo uma blitz na entrada do gama e voce sabe que os documentos do veiculo estao atrasados."),
 		([(12,1,"Game Over! Digite 1 para reiniciar.")], 12, "Voce foi pego, e agora vai passar a noite na jaula."),
 		([(13,8,"(1) Ir de integracao"), (13,9,"(2) Pegar o onibus da FGA"), (13,10,"(3) ir a pe")], 13, "Os policiais te ouviram. Voce foi liberado, mas como voce vai chegar na FGA agora?"),
-		([(3,2,"(1) Pegar um onibus"), (3,15,"(2) Ajudar a trocar")], 3, "O hoje e o seu dia de sorte, o pneu furou, voce e um bom camarada?"),
+		--No 13?
+		
 		([(15,11,"(1) Chamar um moto taxi"), (15,11,"(2) Esperar")], 15, "Mais uma mare de sorte. Houve um acidente, esta tudo parado."),
 		--A partir daqui é ceilandia
 		([(16,17,"(1) Ir de carro"), (16,18,"(2) Ir de moto"), (16,19,"(3) Ir de onibus")], 16,"Voce mora na Ceilandia, de que voce vai?"),
