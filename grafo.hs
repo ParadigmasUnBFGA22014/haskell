@@ -24,7 +24,9 @@ grafo = [
 		([(13,8,"(1) Integracao"), (13,9,"(2) Onibus da FGA"), (13,10,"(3) A pe")], 13, "Os policiais te ouviram. Voce foi liberado, mas como voce vai chegar na FGA agora?"),
 		([(3,2,"(1) Pegar um onibus"), (3,15,"(2) Ajuda a troca")], 3, "O hoje e o seu dia de sorte, o pneu furou, voce e um bom camarada?"),
 		([(15,11,"(1) Moto Taxi"), (15,11,"(2) Esperar")], 15, "Mais uma mare de sorte. Houve um acidente, esta tudo parado, o que voce vai fazer?"),
-		([(16,2,"(1) Onibus Lotado"), (16,3,"(2) Carona")], 16,"Voce mora na Ceilandia, de que voce vai?")
+		([(16,17,"(1) Ir de carro"), (16,18,"(2) Ir de onibus"), (16,19,"(3) Ir de Moto")], 16,"Voce mora na Ceilandia, de que voce vai?"),
+		([(17,18,"(1) Ir de onibus"), (16,19,"(2) Ir de moto"), (16,20,"(3) Nao vai mais :(")], 17,"Ops! Ao sair da garagem roubaram seu carro, o que voce vai fazer?"),
+		([(20,0,"(1) Game Over!")], 20,"Voce perdeu por nao conseguir ir para a FGA!")
 		]
 
 --grafo = [
