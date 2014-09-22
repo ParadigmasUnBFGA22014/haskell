@@ -60,13 +60,13 @@ grafo = [
 
 		--A partir daqui é Santa Maria
 		([(34,35,"(1) De Onibus."),(34,36,"(2) De Carro."),(34,37,"(3) De Bike."),(34,38,"(4) De Carroca.")],34,"Voce mora em Santa Maria, como vc vai para FGA?"),
-		([(35,39,"(1) Pegar um Taxi."),(35,40,"(2) Fazer respiracao boca a boca na vaca e salvar ela."),(2,4,"(3) Voltar para casa e pegar a Bike.")],35,"O motorista atropelou uma vaca sagrada e esta sendo linxado por indianos."),
+		([(35,39,"(1) Pegar um Taxi."),(35,40,"(2) Fazer respiracao boca a boca na vaca e salvar ela."),(2,37,"(3) Voltar para casa e pegar a Bike.")],35,"O motorista atropelou uma vaca sagrada e esta sendo linxado por indianos."),
 		([(36,39,"(1) Abandonar o carro e pegar um taxi."),(36,42,"(2) Abandonar o carro e ir a pe mesmo.")],36,"O pneu furou e voce esta sem Estepe."),
 		([(37,38,"(1) Pegar uma carona numa carroca."),(37,41,"(2) Roubar a bicicleta de uma crianca.")],37,"Voce foi assaltado por um bandido cego."),
 		([(38,43,"(1) Puxar a carroca no braco."),(38,42,"(2) Abandonar e ir a pe para FGA.")],38,"O cavalo se soltou e correu atras de uma egua "),
 		([(39,44,"(1) Sequestrar o taxi e ir para FGA. "),(39,42,"(2) Pular do carro em movimento e ir andando.")],39,"Voce esta na metade do caminho e viu que esta sem dinheiro."),
 		([(40,44,"(1) Correr dos indianos e vai a pe para FGA."),(40,42,"(2) Ordenar que eles o carreguem ate a FGA.")],40,"Os indianos estao te adorando pensando que voce eh o deus shiva."),
-		([(41,42,"(1) Correr bem rapido e vai a pe para FGA."),(41,2,"(2) Correr bem rapido e entra no primeiro onibus que voce ver.")],41,"O pai da crianca eh um negao bombado de 2 metros de altura e esta muito bravo. "),
+		([(41,42,"(1) Correr bem rapido e vai a pe para FGA."),(41,35,"(2) Correr bem rapido e entra no primeiro onibus que voce ver.")],41,"O pai da crianca eh um negao bombado de 2 metros de altura e esta muito bravo. "),
 		([(42,44,"(1) Amarrar sua toca no pe e vai andando."),(42,44,"(2) Ir pulando de um pe so")],42,"A sola do seu sapato soltou e o asfalto esta muito quente."),	
 		([(43,42,"(1) Abandonar e ir a pe para FGA."),(43,41,"(2) Roubar a bicicleta de uma crianca e ir para FGA.")],43,"A carroca desmontou."),
 		([(44,0,"Game Over! Digite 1 para reiniciar.")],44,"A FGA esta fechada, hoje eh domingo, voce confundiu os dias =(")
