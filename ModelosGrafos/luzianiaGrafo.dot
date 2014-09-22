@@ -1,0 +1,61 @@
+
+
+digraph
+{
+	node [shape=doublecircle]
+	"Luziania" [label="Você mora em Luziania e \nprecisa ir para FGA."];
+	"FGA" ;
+	"GameOver";
+
+	node [shape=circle]
+	"OnibusQuebrado" [label="O ônibus quebrou."];	
+	"Engarrafamento" [label="Como sempre, esta tendo \num Engarrafamento no\nValparaiso."];
+	"GamaSul" [label="Você está na entrada sul do Gama."];
+	"Desmaiou" [label="Você desmaiou na metade do caminho por sedentarismo."];
+	"PerdeuOnibus" [label="O ônibus está saindo e o motorista \nnão parou para Você. \nTente outra maneira."];
+	"ChegouFGA" [label="Boa opção, apesar dos inumeros problemas\n Você conseguiu chegar na\n FGA a tempo!"];
+	"Universitario" [label="Cara! Você é um univertario, \nvocê não tem dinheiro nem para comer.\nComo você passou no vestibular pensando assim?"];
+	"BlitzEntradaGama" [label="Opa! Está tendo uma blitz na entrada do Gama e você sabe que os documentos do veiculo estão vencidos."];
+	"Preso" [label="Você foi preso e agora vai passar a noite na jaula."];
+	"PolicialLiberou" [label="Os policiais te ouviram. Você foi liberado, mas como você\nvai chegar na FGA agora?"];
+	"PneuFurado" [label="Hoje é o seu dia de sorte,\no pneu furou.\nVocê é um bom camarada?"];
+	"Acidente" [label="Mais uma maré de sorte.\nHouve um acidente, está tudo parado."];
+
+	"Luziania" -> "OnibusQuebrado" [label="Pegar um ônibus lotado."];
+	"Luziania" -> "PneuFurado" [label ="Pegar uma carona"];
+
+	"OnibusQuebrado" -> "Universitario" [label="Chamar um Táxi"];
+	"OnibusQuebrado" -> "Engarrafamento" [label="Esperar outro onibus"];
+	"OnibusQuebrado" -> "BlitzEntradaGama" [label="Chamar um \nmoto táxi"];
+
+	"PneuFurado" -> "OnibusQuebrado" [label="Pegar um onibus"];
+	"PneuFurado" -> "Acidente" [label="Ajudar a trocar"];
+
+	"Universitario" -> "Engarrafamento" [label="Esperar outro onibus"];
+	"Universitario" -> "BlitzEntradaGama" [label="Chamar um moto taxi"];
+	
+	"Engarrafamento" -> "BlitzEntradaGama" [label="Chamar um moto taxi"];
+	"Engarrafamento" -> "GamaSul" [label="Esperar"];
+
+	"GamaSul" -> "ChegouFGA" [label ="Pegar o Integracao "];
+	"GamaSul" -> "PerdeuOnibus" [label="Pegar o onibus da FGA"];
+	"GamaSul" -> "Desmaiou" [label="Ir a pé"];
+
+	"ChegouFGA" -> "FGA"
+
+	"PerdeuOnibus" -> "ChegouFGA" [label="Pegar integracao"];
+	"PerdeuOnibus" -> "Desmaiou" [label="Ir a pe"];
+	
+	 "Desmaiou" -> "GameOver"
+
+	"BlitzEntradaGama" -> "Preso" [label="Descer e sari correndo"];
+	"BlitzEntradaGama" -> "PolicialLiberou" [label="Explicar a situacao"];
+
+	"Preso" -> "GameOver"
+
+	"PolicialLiberou" -> "ChegouFGA" [label="Ir de integracao"];
+	"PolicialLiberou" -> "PerdeuOnibus" [label="Pegar o onibus da FGA"];
+	"PolicialLiberou" -> "Desmaiou" [label="Ir a pe"];
+
+
+}

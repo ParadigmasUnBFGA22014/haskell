@@ -1,0 +1,73 @@
+
+digraph
+{
+	node [shape=doublecircle];
+	"FimDeJogo" [label="Você perdeu por não conseguir ir para FGA."];
+	"Ceilandia" [label="Você mora na Ceilândia, de que você vai ?"];
+	"FGA";
+	node [shape=circle];
+	
+	"RouboCarro" [label ="Ops! Ao sair da garagem roubaram seu carro!"];
+	"BlitzPolicia" [label="Você foi parado pela policia porquê não estava usando capacete e não esta \ncom os documentos da moto!"];
+	"SubornoPolicial" [label="Você quase conseguiu, o policial pediu \nmais R$ 5,00 para ficar tudo certo!"];
+	"Morto" [label="Ops! Ao tentar escapar o policial\n deu um tiro e você \ncaiu morto no chão!"];
+	"SubornoAceito" [label="Sucesso! Com todo esse dinheiro\n o policial deixou você conseguiu\n chegar na FGA!"];
+	"PolicialHonesto" [label="Que mancada! O policial ficou \nfurioso e quer te prender por \ntentativa de suborno."];
+	"MotoPresa" [label="O policial prendeu sua moto e \nte deixou, o que você vai fazer agora?"];
+	"Assaltado" [label="Você estava andando e foi assaltado, levaram tudo!."];
+	"SentadoOnibus" [label="Você conseguiu pegar um ônibus \nmeio vazio e sentar nas cadeiras preferenciais, \nporem entra uma velhinha!"];
+	"AssaltoOnibus" [label="O ônibus foi assaltado e levaram \ntodo dinheiro e pertences de quem \nestava nas cadeiras preferenciais, você escapou!"];
+	"OnibusQuebradoPerto" [label ="O ônibus quebrou faltando \napenas 5 Km da FGA."];
+	"OnibusDemorado" [label="O próximo onibus demorou 1h, mas \ncomo você é preparado saiu cedo de casa \ne conseguiu chegar na FGA!"];
+	"AssaltoOnibusTenis" [label="O ônibus foi assaltado e roubaram \ntodos que estavam nas cadeiras preferenciais, \nlevaram até seus tenis!"];
+	"Descalco" [label ="Você conseguiu chegar na FGA, \nmas descalco."];
+	"Doenca" [label="Você pegou uma doença por andar descalco \nno estacionamento da FGA e não \nconseguiu entrar!"];
+	"MorreuDoenca" [label="Sua doença piorou e você morreu antes de entrar na FGA."];
+	"Desmaiou" [label="Você desmaiou na metade do caminho por sedentarismo."];
+
+	"Ceilandia" -> "RouboCarro" [label="Ir de carro"];
+	"Ceilandia" -> "BlitzPolicia" [label="Ir de moto"];
+	"Ceilandia" -> "SentadoOnibus" [label="Ir de Onibus"];
+
+	"RouboCarro" -> "BlitzPolicia" [label="Ir de moto"];
+	"RouboCarro" -> "SentadoOnibus" [label="Ir de Onibus"];
+	"RouboCarro" -> "FimDeJogo" [label="Nao vai mais."];
+
+	"BlitzPolicia" -> "SubornoPolicial" [label="Subornar com R$ 10,00"];
+	"BlitzPolicia" -> "Morto" [label="Acelerar e fugir"];
+	"BlitzPolicia" -> "MotoPresa" [label="Deixar moto ser apreendida"];
+
+	"SentadoOnibus" -> "AssaltoOnibus" [label="Dar lugar e ir para o fundo do onibus"];
+	"SentadoOnibus" -> "AssaltoOnibusTenis" [label="Fingir estar dormindo"];
+
+	"SubornoPolicial" -> "SubornoAceito" [label="Aumentar suborno para R$ 15,00"];
+	"SubornoPolicial" -> "PolicialHonesto" [label="Esquecer suborno e tentar outra negociacao"];
+	"SubornoPolicial" -> "MotoPresa" [label="Deixar moto ser apreendida"];
+
+	"MotoPresa" -> "SentadoOnibus" [label="Ir de onibus"];
+	"MotoPresa" -> "Assaltado" [label="Voltar para casa"];
+
+	"Sucesso" -> "FGA" [label="Entrar na FGA."];
+
+	"PolicialHonesto" -> "FimDeJogo" [label="Ir preso"];
+
+	"Assaltado" -> "FimDeJogo" [label="Voltar para casa"];
+
+	"AssaltoOnibus" -> "OnibusQuebradoPerto" [label="Continuar no onibus"];
+	"AssaltoOnibus" -> "Assaltado" [label="Descer do Onibus"];
+
+	"AssaltoOnibusTenis" -> "OnibusQuebradoPerto" [label="Continuar no onibus"];
+	"AssaltoOnibusTenis" -> "Assaltado" [label="Descer do onibus"];
+
+	"OnibusQuebradoPerto" -> "OnibusDemorado" [label="Esperar proximo onibus"];
+	"OnibusQuebradoPerto" -> "Desmaiou" [label ="Ir andando"];
+
+	"OnibusDemorado" -> "FGA"
+
+	"Descalco" -> "Doenca" [label="Entrar na FGA assim mesmo."];
+	"Descalco" -> "FimDeJogo" [label="Ir para o hospital"];
+
+	"MorreuDoenca" -> "FimDeJogo" [label="Game over"];
+
+
+}
