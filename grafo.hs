@@ -9,6 +9,16 @@ type Grafo = [No]
 
 grafo :: [No]
 
+--usar isso para explicar grafo na sala 
+--grafo = [
+--		([(1,4,"(1) Valparaiso"),(1,5,"(2) Gama"),(1,2,"(3) Taguatinga"),(1,3,"(4) Ocidental")],1,"Para onde vc quer ir?"),
+--		([(2,1,"(1) Rodoviaria"),(2,3,"(2) Cidade Ocidental")],2,"Para onde vc quer ir?"),
+--		([(3,1,"(1) Rodoviaria"),(3,4,"(2) Valparaiso")],3,"Para onde vc quer ir ?"),
+--		([(4,1,"(1) Rodoviaria"),(4,5,"(2) Gama")],4,"Para onde vc quer ir?"),
+--		([(5,1,"(1) Rodoviaria"),(5,2,"(2) Taguatinga")],5,"Para onde vc quer ir?")
+
+--		]		
+
 grafo = [
 		([(0, 1, "(1) Luziania"), (0, 16, "(2) Ceilandia"), (0, 34, "(3) Santa Maria")], 0, "Voce precisa ir para a FGA, escolha uma cidade de partida."),
 		
@@ -32,7 +42,7 @@ grafo = [
 		([(16,17,"(1) Ir de carro"), (16,18,"(2) Ir de moto"), (16,19,"(3) Ir de onibus")], 16,"Voce mora na Ceilandia, de que voce vai?"),
 		([(17,18,"(1) Ir de moto"), (16,19,"(2) Ir de onibus"), (16,20,"(3) Nao vai mais :(")], 17,"Ops! Ao sair da garagem roubaram seu carro!"),
 		([(18,21,"(1) Subornar com R$ 10,00"), (18,22,"(2) Acelerar e Fugir"), (18,23,"(3) Deixar moto ser apreendida")], 18,"Voce foi parado pela policia, porque nao estava usando capacete e nao esta com os documentos da moto!"),
-		([(19,27,"(1) Dar Lugar, e ir para o fundo do onibus"), (19,28,"(2) Fingir estar dormindo")], 19,"Voce consegue pegar um onibus meio vazio e sentar nas cadeiras preferenciais, porem entra uma velhinha!"),
+		([(19,27,"(1) Dar Lugar, e ir para o fundo do onibus"), (19,28,"(2) Fingir estar dormindo")], 19,"Voce conseguiu pegar um onibus meio vazio e sentar nas cadeiras preferenciais, porem entra uma velhinha!"),
 		([(20,0,"(1) Game Over! Digite 1 para reiniciar.")], 20,"Voce perdeu por nao conseguir ir para a FGA!"),
 		([(21,24,"(1) Aumentar suborno para R$ 15,00"), (21,25,"(2) Esquecer suborno e tentar outra negociacao"), (21,23,"(3) Deixar moto ser apreendida")], 21,"Voce quase conseguiu, o policial pediu mais R$ 5,00 para tudo ficar certo!"),
 		([(22,0,"(1) Game Over! Digite 1 para reiniciar.")], 22,"Ops! Ao tentar escapar o policial te deu um tiro, e voce caiu morto no chao!"),
@@ -46,7 +56,7 @@ grafo = [
 		([(30,44,"(1) Entrar na FGA")], 30,"O proximo onibus demorou 1h, mas como voce e preparado saiu cedo de casa e conseguiu chegar na FGA!"),
 		([(31,32,"(1) Entrar na FGA")], 31,"Voce conseguiu chegar na FGA decalco!"),
 		([(32,33,"(1) Entrar na FGA assim mesmo"), (32,20,"(2) Ir para o hospital")], 32,"Voce pegou uma doenca por andar descalco no estacionamento da FGA e nao conseguiu entrar!"),
-		([(33,0,"(1) Game Over!")], 33,"Sua doenca pirou e voce morreu antes de conseguir entrar na FGA!")
+		([(33,0,"(1) Game Over!")], 33,"Sua doenca pirou e voce morreu antes de conseguir entrar na FGA!"),
 
 		--A partir daqui é Santa Maria
 		([(34,35,"(1) De Onibus."),(34,36,"(2) De Carro."),(34,37,"(3) De Bike."),(34,38,"(4) De Carroca.")],34,"Voce mora em Santa Maria, como vc vai para FGA?"),
