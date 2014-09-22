@@ -43,7 +43,7 @@ grafo = [
 		([(27,29,"(1) Continuar no onibus"), (27,20,"(2) Descer do onibus")], 27,"O onibus foi assaltado e levaram todo dinheiro e pertences de que estava na frente, voce escapou!"),
 		([(28,31,"(1) Continuar no onibus"),(28,26,"(2) Descer do onibus")], 28,"O onibus foi assaltado e roubaram todos que estavam na frente, levaram ate seus tenis!"),
 		([(29,30,"(1) Esperar proximo"),(29,10,"(2) Ir andando")], 29,"O onibus quebrou faltando apenas 5km para a FGA!"),
-		([(30,20,"(1) Entrar na FGA")], 30,"O proximo onibus demorou 1h, mais como voce e preparado saiu cedo de casa, e conseguiu chegar na FGA!"),
+		([(30,44,"(1) Entrar na FGA")], 30,"O proximo onibus demorou 1h, mais como voce e preparado saiu cedo de casa, e conseguiu chegar na FGA!"),
 		([(31,32,"(1) Entrar na FGA")], 31,"Voce conseguiu chegar na FGA decalco!"),
 		([(32,33,"(1) Entrar na FGA assim mesmo"), (32,20,"(2) Ir para o hospital")], 32,"Voce pegou uma doenca por andar descalco no estacionamento da FGA e nao conseguiu entrar!"),
 		([(33,0,"(1) Game Over!")], 33,"Sua doenca pirou e voce morreu antes de conseguir entrar na FGA!")
